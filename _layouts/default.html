@@ -9,12 +9,12 @@
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       <nav id="main-navigation">
         <a href="/" class="btn">Homepage</a>
-        <a href="/allstate/" class="btn">Allstate Arena</a>
-        <a href="/chicago/" class="btn">Chicago Theater</a>
-        <a href="/guranteed/" class="btn">Guaranteed Rate Field</a>
-        <a href="/soldier/" class="btn">Soldier Field</a>
-        <a href="/united/" class="btn">United Center</a>
-        <a href="/wrigley/" class="btn">Wrigley Field</a>
+        <a href="{{ "/" | relative_url }}" class="btn">Allstate Arena</a>
+        <a href="{{ "/chicago/" | relative_url }}" class="btn">Chicago Theater</a>
+        <a href="{{ "/guranteed/" | relative_url }}" class="btn">Guaranteed Rate Field</a>
+        <a href="{{ "/soldier/" | relative_url }}" class="btn">Soldier Field</a>
+        <a href="{{ "/united/" | relative_url }}" class="btn">United Center</a>
+        <a href="{{ "/wrigley/" | relative_url }}" class="btn">Wrigley Field</a>
       </nav>
     </header>
 
