@@ -15,10 +15,37 @@
   color:purple;
 }
 
-.main-content h1, .main-content h2, .main-content h3{
+.main-content h2, .main-content h3{
   color: black;
+}
+
+.main-content h1{
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
 
 .main-content p, .main-content ul{
   color:blue;
+}
+
+@media only screen and (max-width: 600) {
+  #wrapper{
+  width:960px;
+  margin-left:auto;
+  margin-right:auto;
+  min-width: 0px;
+  max-width: 200px;
+}
+.main-content h1 {
+  text-indent:100%;
+  white-space:nowrap;
+  overflow: hidden;
+}
+
+.main-content h2{
+  text-indent:50%; 
+  white-space:nowrap;
+  overflow: hidden;
+}
 }
