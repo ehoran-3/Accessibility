@@ -3,7 +3,7 @@
 
 .page-header{
   background-color: transparent;
-  background-image: url(/assets/images/blue.jpg);
+  background-image: url({{'/assets/images/blue.jpg' | relative_url}});
   background-size: cover;
   background-position: center center;
 }
@@ -29,6 +29,10 @@
 
 .main-content p, .main-content ul{
   color:blue;
+}
+
+img{
+  border: solid black 2px;
 }
 
 @media only screen and (max-width: 600) {
